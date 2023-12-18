@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cart.js">
+    <title>장바구니</title>
+</head>
+<body>
+    <header>
+        <h1>장바구니</h1>
+        <nav>
+            <a href="챗메인페이지.html">홈</a>
+        </nav>
+    </header>
+    <section id="cart-items">
+        <!-- 장바구니에 담긴 상품 목록이 여기에 표시됨 -->
+        <div class="cart-item">
+            <img src="/Users/seohyeon/파이썬/파이썬_1218/쇼핑/1.png" alt="Product 1" boder="200" width="200" height="200">
+            <p>상품 이름: 가디건</p>
+            <label for="color">색상 선택:</label>
+            <select id="color">
+                <option value="red">화이트</option>
+                <option value="blue">블랙</option>
+                <option value="green">아이보리</option>
+            </select>
+            <label for="quantity">수량 선택:</label>
+            <input type="number" id="quantity" value="1" min="1">
+            <p>가격: 50000원</p>
+            <button onclick="removeItem()">주문하기</button>
+            <button onclick="removeItem()">관심상품등록</button>
+            <button onclick="removeItem()">삭제</button>
+            <button onclick="removeItem()">선택상품주문</button>
+            <button onclick="removeItem()">전체상품주문</button>
+            <button onclick="removeItem()">쇼핑계속하기</button>
+        </div>
+        <!-- 다른 상품들도 유사하게 나열 -->
+    </section>
+    <footer>
+        <p>&copy; 2201700_박서현</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+section {
+    padding: 20px;
+}
+
+.cart-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+
+

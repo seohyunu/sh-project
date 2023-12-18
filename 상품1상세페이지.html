@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>상품 상세 페이지</title>
+</head>
+<body>
+    <header>
+        <h1>쇼핑몰</h1>
+        <nav>
+            <a href="챗메인페이지.html">홈</a>
+        </nav>
+    </header>
+    <section class="product-details">
+        <div class="product-image">
+            <img src="/Users/seohyeon/파이썬/파이썬_1218/쇼핑/1.png" alt="Product 1">
+        </div>
+        <div class="product-info">
+            <h2>상품 이름: 가디건</h2>
+            <p>가격: 50000원</p>
+            <p>색상: 화이트</p>
+            <p>재고: 1개</p>
+            <p>상품 설명: 화이트컬러의 가디건입니다.</p>
+            <button onclick="addToCart()"><a href="챗메인페이지.html">장바구니에 추가</a></button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 우리 쇼핑몰</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.product-details {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.product-info {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+

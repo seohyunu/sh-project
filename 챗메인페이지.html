@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatstyles.css">
+    <link rel="stylesheet" href="Cart.html">
+    <title>쇼핑몰 메인 페이지</title>
+</head>
+<body>
+
+    <header>
+        <h1>쇼핑몰</h1>
+    </header>
+
+    <nav>
+        <a href="#">홈</a>
+        <a href="Login.html">로그인</a>
+        <a href="Cart.html">장바구니</a>
+    </nav>
+
+
+    <div class="sidebar">
+        <h2>카테고리</h2>
+        <ul>
+            <li><a href="#">Made</a></li>
+            <li><a href="#">Outer</a></li>
+            <li><a href="#">Outer</a></li>
+            <li><a href="#">top</a></li>
+            <li><a href="#">Bottom</a></li>
+            <li><a href="#">고객 서비스</a></li>
+            <!-- 추가 카테고리 -->
+        </ul>
+    </div>
+
+    <section>
+        <div class="product">
+            <img src="/Users/seohyeon/파이썬/파이썬_1218/쇼핑/1.png" boder="250" width="250" height="250">
+            <h2><a href="상품1상세페이지.html">가디건</a></h2>
+            <p>50000원</p>
+            <button><a href="Cart.html">장바구니</a></button>
+            <button>구매하기</button>
+        </div>
+
+        <div class="product">
+            <img src="/Users/seohyeon/파이썬/파이썬_1218/쇼핑/2.png" boder="250" width="250" height="250">
+            <h2>끈 오프숄더</h2>
+            <p>55000원</p>
+            <button><a href="Cart.html">장바구니</a></button>
+            <button>구매하기</button>
+        </div>
+
+        <div class="product">
+            <img src="/Users/seohyeon/파이썬/파이썬_1218/쇼핑/3.png" boder="250" width="250" height="250">
+            <h2>부츠컷</h2>
+            <p>100000원</p>
+            <button><a href="Cart.html">장바구니</a></button>
+            <button>구매하기</button>
+        </div>
+
+        <div class="product">
+            <img src="/Users/seohyeon/파이썬/파이썬_1218/쇼핑/4.png" boder="250" width="250" height="250">
+            <h2>라운드</h2>
+            <p>150000원</p>
+            <button><a href="Cart.html">장바구니</a></button>
+            <button>구매하기</button>
+
+        </div>
+
+        <div class="product">
+            <img src="/Users/seohyeon/파이썬/파이썬_1218/쇼핑/5.png" boder="250" width="250" height="250">
+            <h2>반팔</h2>
+            <p>150000원</p>
+            <button><a href="Cart.html">장바구니</a></button>
+            <button>구매하기</button>
+
+        </div>
+
+        <div class="product">
+            <img src="/Users/seohyeon/파이썬/파이썬_1218/쇼핑/6.png" boder="200" width="200" height="200">
+            <h2>조거팬츠</h2>
+            <p>150000원</p>
+            <button><a href="Cart.html">장바구니</a></button>
+            <button>구매하기</button>
+
+        </div>
+        <!-- 여러 제품 추가 -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2201700_박서현.</p>
+    </footer>
+
+</body>
+</html>
+
+<style>
+    .sidebar {
+       float: left;
+       width: 20%;
+       background-color: #ddd;
+       padding: 1em;
+       height: 100vh;
+       box-sizing: border-box;
+   }
+
+   .product-list {
+       margin-top: 2em;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+   }
+
+   body {
+       font-family: Arial, sans-serif;
+       margin: 0;
+       padding: 0;
+       background-color: #f4f4f4;
+   }
+
+   header {
+       background-color: #333;
+       color: white;
+       padding: 1em;
+       text-align: center;
+       
+   }
+
+   nav {
+       display: flex;
+       justify-content: space-around;
+       background-color: #444;
+       padding: 1em;
+       text-emphasis-color: rgb(206, 205, 205);
+   }
+   nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+   }
+
+   nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+   }
+   
+
+   section {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       padding: 2em;
+   
+   }
+
+   .product {
+       width: 300px;
+       margin: 1em;
+       padding: 1em;
+       border: 1px solid #ddd;
+       background-color: white;
+       text-align: center;
+   }
+
+   footer {
+       background-color: #2a2727;
+       color: white;
+       text-align: center;
+       padding: 1em;
+   }
+</style>
